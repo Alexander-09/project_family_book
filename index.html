@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Project-78</title>
+</head>
+
+<body> 
+    <center>
+	    <h1>My Family Book</h1>
+       
+        <img id="album" src="https://languageduringmealtime.com/wp-content/uploads/2014/11/The-family-book-e1417314391978.jpg"> 
+        <br>
+        <p id="familytext">The Eccleston Family</p>
+        <button onclick="Next()" id="Next_button">
+            Next
+        </button>
+    </center>
+
+    <script>
+        var Names  = ["Darran Eccleston", "Hazel Eccleston", "Alexander Eccleston"];
+        var Images = ["https://www.vippng.com/png/detail/25-253995_happy-fathers-day-super-dad-clipart-transparent.png",
+                      "https://thumbs.dreamstime.com/b/super-mom-icon-illustration-46517893.jpg",
+                      "https://lh3.googleusercontent.com/proxy/Sx5P7A86Do9kdUYuVc6yCJVHSQ9Fx8yxmIW515hCKuEgtf3VNTKb0Q3du49jXJ2lux4Zr46USj5Eq00meMjm1PY2JcKcPeeXVe9IATmlVyg"];
+        var i = 0; 
+        
+        function Next()
+            {
+            if (i < 3)
+                {
+                document.getElementById("familytext").innerHTML = Names[i];
+                document.getElementById("album").src = Images[i]; 
+                i++;
+                }
+            }
+    </script>
+</body>
+</html>
